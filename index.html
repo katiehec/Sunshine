@@ -343,7 +343,7 @@ dialog::backdrop { background: rgba(20, 18, 16, .95); }
     <div>
       <h2 id="note-h">Leave a note</h2>
       <p>Thoughts on a piece, a question, or just hello. Your message comes straight to me.</p>
-      <p class="commission">I also take commissions, from sets of everyday dishes to personalized pieces for birthdays and weddings. Tell me what you have in mind.</p>
+      <p class="commission">I also take commissions, from sets of everyday dishes to personalized pieces for birthdays, weddings, graduations, baby showers and other celebrations. Tell me what you have in mind.</p>
     </div>
     <form id="note-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="db6a5716-6c8b-4cee-bf88-241172410656">
@@ -352,7 +352,7 @@ dialog::backdrop { background: rgba(20, 18, 16, .95); }
       <p class="hp"><label>Leave empty <input id="botcheck" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off"></label></p>
       <div class="row">
         <label for="note-name">Name<input id="note-name" name="name" autocomplete="name"></label>
-        <label for="note-email">Email (optional)<input id="note-email" name="email" type="email" autocomplete="email"></label>
+        <label for="note-email">Email<input id="note-email" name="email" type="email" autocomplete="email" required></label>
       </div>
       <label for="note-msg">Message<textarea id="note-msg" name="message" required></textarea></label>
       <button class="send" id="note-send" type="submit">Send</button>
